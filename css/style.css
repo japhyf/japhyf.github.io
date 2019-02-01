@@ -83,10 +83,17 @@ hr {
 
 #knight-img {
     height: 140px;
+	margin-top: 36px;
 }
 
 #pen-img {
-    height: 140px;
+    height: 200px;
+	margin-top: 49px;
+}
+
+#food-img{
+	height: 200px;
+	margin-top: 37px;
 }
 
 #forrest1{
