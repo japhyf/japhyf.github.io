@@ -106,7 +106,7 @@ hr {
 }
 */
 #forrest1{
-	bottom: 104px;
+	bottom: 126px;
 }
 
 @media only screen and (max-width : 480px) {
@@ -170,6 +170,24 @@ hr {
 .parallax-container {
     height: 600px !important;
     z-index: -1;
+}
+
+.work-experience-para-cont{
+	height: 400px !important;
+}
+
+.work-experience-para-cont .parallax img{
+    max-width: 168%;
+    max-height: auto;
+    bottom: 12%;
+    /* right: 00px !important; */
+    height: auto;
+    min-width: 1300px !important;
+    min-height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
 .parallax img {
