@@ -134,6 +134,7 @@ hr {
 	}
 }
 
+
 @media only screen and (max-width : 1200px) {
 	.col1 {
 		float: none !important;
@@ -150,7 +151,13 @@ hr {
 	#fort-text {
 		margin-top: 35px;
 	}
+	
+	.work-img{
+		width: 100% !important;
+	}
 }
+
+
 
 .git{
 	font-size: xx-large;
