@@ -36,38 +36,6 @@
     offset: 80
   });
 
-  $(function() {
-
-    var isMobile;
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-     isMobile = true;
-  
-     // Mobile height fix
-     $('.height-fix').each(function(){
-      var h = $(this).height();
-      $(this).height(h)
-     })
-    }
-  
-    // RESIZE RESETS
-    $(window).resize(function(){
-      posFilterBar($('.filter').first());
-    });
-  
-    // Sticky Nav on Mobile
-    if (isMobile) {
-      $('nav').addClass('fixed');
-    } else {
-      $('nav').addClass('desk');
-    }
-  
-  
-    // NAV POSITION
-    var navPos = $('nav').position().top;
-    var lastPos = 0;
-    var lockTimer
-  });
-
   // Floating label headings for the contact form
   $(function() {
     $("body").on("input propertychange", ".floating-label-form-group", function(e) {
