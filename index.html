@@ -33,7 +33,7 @@
             <div class="center title-type">
               <span id="type" class="typed black-text"></span>
             </div>
-            <button class="landing-button" id="landing-button"><a class="landing-a js-scroll-trigger" href="#work-expr-section">View my work<i class="fas fa-arrow-right landing-arrow" id="landing-arrow"></i></a></button>
+            <a class="js-scroll-trigger" href="#about-section"><button class="landing-button landing-a" id="landing-button">View my work<i class="fas fa-arrow-right landing-arrow" id="landing-arrow"></i></button></a>
           </div>
         </div>
       </div>
@@ -42,24 +42,29 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top navbar-shrink" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Japheth Frolick</a>
-        <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fas fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#work-expr-section">Work Experience</a>
-            </li>
-            <li class="nav-item mx-0 mx-lg-1">
-              <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Japheth Frolick</a>
+      <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
+        type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about-section">About</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#work-expr-section">Work Experience</a>
+          </li>
+          <li class="nav-item mx-0 mx-lg-1">
+            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </nav>
   
   <!-- Paralax Image
   <section>
@@ -77,12 +82,56 @@
   </div>
 </section> -->
 
-  <!--   Icon Section   
-  <section class="icon-section" id="icon-section">
-	<div class="container">
+  <!--   About Section -->
+  <section class="about-section" id="about-section">
+    <div class="row about-row">
+      <div id="image-col" style="padding-left: 0px;">
+        <img id="profile-img" src="img/tennis1bw.jpg" alt="Me">
+      </div>
+      <div id="about-col">
+        <h2 class="about-name">I'm Japheth Frolick</h2>
+        <div class="about-row row">
+          <div class="col-sm-2">
+            <h2 class="center wow jello about-icon" data-wow-delay=".5s"><i class="material-icons">school</i>
+            </h2>
+          </div>
+          <div class="col-sm-10">
+            <h5 class="center about-title">Attending UC Santa Cruz</h5>
+            <h5 class="center about-sub">Graduating in 2020</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <h2 class="center wow jello about-icon" data-wow-delay=".5s"><i class="material-icons">group</i>
+            </h2>
+          </div>
+          <div class="col-sm-10">
+            <h5 class="center about-title">Agile Developer</h5>
+            <h5 class="center about-sub">Worklace agile experience</h5>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+            <h2 class="center wow jello about-icon" data-wow-delay=".5s"><i class="material-icons">code</i>
+            </h2>
+          </div>
+          <div class="col-sm-10">
+            <h5 class="center about-title">Experienced Programmer</h5>
+            <h5 class="center about-sub">Expert in Python, Java, Javascript, Golang, C, C++, C#, HTML, and CSS</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  
+  
+  </section>
+
+  <!-- Icon Section 
+  <div class="container">
 		<div class="section">
 			<div class="row">
-				<div class="col s12 m4">
+        <div class="col s12 m4">
 					<div class="icon-block">
 						<h2 class="center teal-text"><i class="material-icons">school</i></h2>
 						<h5 class="center">Attending UC Santa Cruz</h5>
@@ -106,24 +155,10 @@
 			</div>
 		</div>
   </div>
-</section> -->
+
+  -->
 	
-	<!--   Work Experience Header
-	
-	<div class="parallax-container work-experience-para-cont valign-wrapper">
-			<div class="container">
-				<br><br>
-				<h1 id="title" class="header center white-text accent-2">Work Experience</h1>
-				<div class="row center">
-					<h5> <span id="type" class="typed"></span></h5>
-				</div>
-				<br><br>
-			</div>
-		<div class="parallax" id="forrest" ><img src="forrest.jpg" alt="Unsplashed background img 2"></div>
-	</div> -->
-	
-	
-  <section class="page-section portfolio work" id="work-expr-section">
+  <section class="page-section work" id="work-expr-section">
 
   <!-- Work Experience Section Heading -->
   <h2 id="work-header" class="page-section-heading text-center text-uppercase text-secondary mb-0 wow slideInRight" data-wow-duration="1s">Work Experience</h2>
@@ -181,9 +216,10 @@
 		<div id="forrest1" class="parallax"><img src="forrest1.jpg" alt="Unsplashed background img 2"></div>
   </div> -->
   
-  <section class="page-section portfolio" id="portfolio">
+  <section class="page-section portfolio" id="projects">
+  
   <!-- Portfolio Section Heading -->
-  <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 wow slideInRight" data-wow-duration="1s">Portfolio</h2>
+  <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 wow slideInRight" data-wow-duration="1s">Projects</h2>
 
   <!-- Icon Divider -->
   <div class="divider-custom wow slideInRight" data-wow-duration="1s" data-wow-delay=".1s">

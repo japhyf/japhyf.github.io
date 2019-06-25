@@ -5,12 +5,33 @@
  *
  * Made By MaterializeCSS.com
  */
+ @font-face {
+	font-family: "CooperHewitt-Bold";
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Bold.eot");
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Bold.woff") format("woff"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Bold.otf") format("opentype"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Bold.svg") format("svg");
+}
 
+ @font-face {
+	font-family: "CooperHewitt-Medium";
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.eot");
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.woff") format("woff"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.otf") format("opentype"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.svg") format("svg");
+}
+
+@font-face {
+	font-family: "CooperHewitt-Light";
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Light.eot");
+	src: url("CooperHewitt-WebFonts-public/CooperHewitt-Light.woff") format("woff"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Light.otf") format("opentype"),
+	url("CooperHewitt-WebFonts-public/CooperHewitt-Light.svg") format("svg");
+}
 
 ul:not(.browser-default) > li {
      list-style-type: disc; 
 }
-
 
 p {
   line-height: 2rem;
@@ -148,6 +169,68 @@ hr {
 	margin-left: 15px;
 }
 
+.about-row{
+	color: black;
+	margin-bottom: 0;
+}
+
+#about-col{
+	background-color: white;
+}
+
+.about-name{
+	width: 50vw;
+	color: black;
+	font-family: "CooperHewitt-Bold";
+	text-align: center;
+	margin-bottom: 20%;
+}
+
+@media (max-width : 1026px) {
+	.about-name{
+		width: 100vw;
+		font-family: "CooperHewitt-Bold";
+		text-align: center;
+		margin-bottom: 7%;
+	}
+}
+
+.about-title{
+	font-size: 2rem;
+	margin-top: 22px;
+}
+
+.about-sub{
+	font-size: 1.5rem;
+	margin-top: 20px;
+}
+
+.about-icon .material-icons {
+	font-size: inherit;
+}
+
+.image-col{
+	-webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+@media (max-width : 1025px) {
+	.image-col{
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		flex-grow: 0;
+		flex-shrink: 0;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
 
 #umg-text{
 	margin-top: 0px;
@@ -272,8 +355,32 @@ hr {
 	background-color: var(--light2);
 }
 
-.icon-section{
+.about-section{
+	background-color: var(--sky);
+}
 
+.profile-crop {
+	height: 100vh;
+	width: 50vw;
+    overflow: hidden;
+}
+
+.profile-crop .profile-img {
+	height: 100vh;
+	display: block;
+	margin: auto;
+	vertical-align: bottom;
+	position: relative;
+	object-fit: cover;
+	right: 40px;
+}
+
+.half-profile-img{
+	width: 50vw;
+}
+
+.full-profile-img{
+	width: 100vw;
 }
 
 #work-header{

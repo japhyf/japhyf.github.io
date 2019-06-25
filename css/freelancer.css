@@ -49,6 +49,14 @@
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
+@font-face {
+  font-family: "CooperHewitt-Medium";
+  src: url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.eot");
+  src: url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.woff") format("woff"),
+  url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.otf") format("opentype"),
+  url("CooperHewitt-WebFonts-public/CooperHewitt-Medium.svg") format("svg");
+  }
+
 *,
 *::before,
 *::after {
@@ -6125,7 +6133,7 @@ body.modal-open {
 }
 
 .food-map{
-  max-height: 382.5px;
+  max-height:
 }
 
 .resume-btn {
