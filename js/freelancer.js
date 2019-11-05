@@ -11,7 +11,6 @@
 
   //Size img on about page
   function sizeAbout(windowWidth) {
-    console.log(windowWidth);
     if (windowWidth < 1026) {
       $("#image-col").addClass("col-sm-12");
       $("#image-col").removeClass("col-sm-6");
@@ -79,6 +78,33 @@
         if (target.length) {
           $('html, body').animate({
             scrollTop: (target.offset().top - 250)
+          }, 1000);
+          return false;
+        }
+      }
+    }
+  });
+
+  $('a.js-scroll-trigger-top[href*="#"]:not([href="#"])').click(function() {
+    if (!isMobile){
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 71)
+          }, 1000, "easeInOutExpo");
+          return false;
+        }
+      }
+    }
+    else{
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: (target.offset().top - 1)
           }, 1000);
           return false;
         }
